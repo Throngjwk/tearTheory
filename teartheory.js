@@ -92,7 +92,7 @@ var tick = (elapsedTime, multiplier) => {
     } else {
         currency_T.value -= BigNumber.ONE;
     }
-    currency.value += currency_T.value * dt * bonus * getADJUST(adjust.level).pow(getADJUSTExponent(adjustExp.level)) *
+    currency.value += currency_T.value * dt * bonus * getADJUST(adjust.level) *
                                                       getPOWER(power.level);
 }
 
