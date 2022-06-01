@@ -35,7 +35,7 @@ var init = () => {
     // power
     {
         let getDesc = (level) => "power=formula^{" + level + "}";
-        let getInfo = (level) => "power=" + getC2(level).toString(0);
+        let getInfo = (level) => "power=" + getPOWER(level).toString(0);
         power = theory.createUpgrade(1, currency, new ExponentialCost(100, Math.log2(10)));
         power.getDescription = (_) => Utils.getMath(getDesc(power.level));
         power.getInfo = (amount) => Utils.getMathTo(getInfo(power.level), getInfo(power.level + amount));
