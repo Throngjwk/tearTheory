@@ -6,7 +6,7 @@ import { Utils } from "./api/Utils";
 
 var id = "TearTheory";
 var name = "Tear Theory";
-var description = "created by " + authors;
+var description = "created by Karen";
 var authors = "Karen";
 var version = 1;
 
