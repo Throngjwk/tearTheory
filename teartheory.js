@@ -119,7 +119,7 @@ var getTau = () => currency.value.pow(0.05);
 var get2DGraphValue = () => currency.value.sign * (BigNumber.ONE + currency.value.abs()).log10().toNumber();
 
 var getADJUST = (level) => currency_T.value = 100;
-var getPOWER = (level) => BigNumber.from(tau.pow(0.25) / 100).pow(level);
+var getPOWER = (level) => BigNumber.from(currency_T.value.pow(0.5) / 100).pow(level);
 var getADJUSTExponent = (level) => BigNumber.from(1 + 0.05 * level);
 var getPOWERExponent = (level) => BigNumber.from(1 + 0.05 * level);
 
