@@ -74,8 +74,8 @@ var init = () => {
     ///////////////////
     //// Story chapters
     chapter1 = theory.createStoryChapter(0, "Decigolus", "Hello Hello. \nthis get a t the free \ngo this go winning to \nOne Buying this.", () => power.level > 0);
-    chapter2 = theory.createStoryChapter(1, "Complex Status", "Yes \nFor \nMe \nyes dont this go anymore getting go?", () => tau > 1e6);
-    chapter3 = theory.createStoryChapter(2, "Complex Stars Lite", "For do yes me now \nhello \nthis. \never ever?", () => tau > 1e8);
+    chapter2 = theory.createStoryChapter(1, "Complex Status", "Yes \nFor \nMe \nyes dont this go anymore getting go?", () => currency.value > 1e6);
+    chapter3 = theory.createStoryChapter(2, "Complex Stars Lite", "For do yes me now \nhello \nthis. \never ever?", () => currency.value > 1e8);
 
     updateAvailability();
 }
