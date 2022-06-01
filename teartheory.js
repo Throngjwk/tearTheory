@@ -70,13 +70,16 @@ var init = () => {
     //// Achievements
     achievement1 = theory.createAchievement(0, "Tear", "Start to Tear Theory.", () => adjust.level > 0);
     achievement2 = theory.createAchievement(1, "Prestigudous", "After Power???", () => power.level > 0);
+    achievement3 = theory.createAchievement(2, "Max Prestigudous", "Third Power???", () => power.level > 2);
 
     ///////////////////
     //// Story chapters
     chapter1 = theory.createStoryChapter(0, "Decigolus", "Hello Hello. \nthis get a t the free \ngo this go winning to \nOne Buying this.", () => power.level > 0);
     chapter2 = theory.createStoryChapter(1, "Complex Status", "Yes \nFor \nMe \nyes dont this go anymore getting go?", () => currency.value > 1e6);
     chapter3 = theory.createStoryChapter(2, "Complex Stars Lite", "For do yes me now \nhello \nthis. \never ever?", () => currency.value > 1e8);
-
+    chapter4 = theory.createStoryChapter(3, "Complex Stars", "M \nA \nJ \nO \nR \nMAXIUM!", () => power.level > 2);
+    
+    
     updateAvailability();
 }
 
