@@ -93,7 +93,7 @@ var tick = (elapsedTime, multiplier) => {
         currency_T.value -= BigNumber.ONE;
     }
     currency.value += currency_T.value * dt * bonus * getADJUST(adjust.level).pow(getADJUSTExponent(adjustExp.level)) *
-                                                      getPOWER(power.level));
+                                                      getPOWER(power.level);
 }
 
 var getPrimaryEquation = () => {
