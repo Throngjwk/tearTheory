@@ -6,7 +6,7 @@ import { Utils } from "./api/Utils";
 
 var id = "TearTheory";
 var name = "Tear Theory";
-var description = "created by Karen";
+var description = "created by " + authors;
 var authors = "Karen";
 var version = 1;
 
@@ -120,7 +120,7 @@ var get2DGraphValue = () => currency.value.sign * (BigNumber.ONE + currency.valu
 
 var getADJUST = (level) => currency_T.value = 100;
 var getPOWER = (level) => BigNumber.from(tau.pow(0.25) / 100).pow(level);
-var getC1Exponent = (level) => BigNumber.from(1 + 0.05 * level);
-var getC2Exponent = (level) => BigNumber.from(1 + 0.05 * level);
+var getADJUSTExponent = (level) => BigNumber.from(1 + 0.05 * level);
+var getPOWERExponent = (level) => BigNumber.from(1 + 0.05 * level);
 
 init();
